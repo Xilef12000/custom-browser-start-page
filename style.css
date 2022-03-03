@@ -43,8 +43,8 @@ footer {
 	height: 80px;
 	width: 80px;
 	position: relative;
-    top: 16px;
-    left: 0px;
+	top: 16px;
+	left: 0px;
 }
 .img{
 	image-rendering: auto;
@@ -55,15 +55,15 @@ footer {
 	width: 48px;
 	height: 48px;
 	position: relative;
-    top: 16px;
-    left: 0px;
+	top: 16px;
+	left: 0px;
 }
 .img_text{
 	width: 48px;
 	height: 48px;
 	position: relative;
-    top: 16px;
-    left: 0px;
+	top: 16px;
+	left: 0px;
 	font-size:48px;
 	font-weight: bold;
 }
