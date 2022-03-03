@@ -2,6 +2,10 @@
 	--json:
 
 	{
+		"settings":{
+			"logo":true,
+			"ignoreUpdates":false
+		},
 		"data":{
 			"columns":6,
 			"rows":2
