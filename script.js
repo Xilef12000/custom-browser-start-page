@@ -46,11 +46,6 @@ function generateTable(obj) {
 					table_content += '">'
 				}
 			}
-			else{
-				table_content += '<img class="img" src="'
-				table_content += obj.content[i][j].url + "favicon.ico";
-				table_content += '">'
-			}
 			table_content += '</div><p class="p">' + obj.content[i][j].name + '</p></center></a>';
 			table_content += '</td>';
 		}

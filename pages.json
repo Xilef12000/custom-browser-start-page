@@ -11,16 +11,16 @@
 		},
 		"content":[
 			[
-				{"url":"https://github.com/","name":"Github","image":"https://github.githubassets.com/pinned-octocat.svg"},
-				{"url":"https://stackoverflow.com/","name":"Stackoverflow","image":""},
-				{"url":"https://www.google.com/","name":"Google","image":""},
-				{"url":"https://www.youtube.com/","name":"Youtube","image":"https://www.youtube.com/s/desktop/35e75ccf/img/favicon_48x48.png"},
-				{"url":"https://www.amazon.de","name":"Amazon","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/240px-Amazon_icon.svg.png"},
-				{"url":"https://www.reddit.com/","name":"Reddit","image":"https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png"}
+				{"url":"https://github.com/","name":"Github","image":"icons/github.svg"},
+				{"url":"https://about.gitlab.com/","name":"Gitlab","image":"icons/gitlab.png"},
+				{"url":"https://stackoverflow.com/","name":"Stackoverflow","image":"icons/stackoverflow.png"},
+				{"url":"https://www.youtube.com/","name":"Youtube","image":"icons/youtube.png"},
+				{"url":"https://www.amazon.de","name":"Amazon","image":"icons/amazon.ico"},
+				{"url":"https://www.reddit.com/","name":"Reddit","image":"icons/reddit.png"}
 			],
 			[
-				{"url":"https://www.wikipedia.org/","name":"Wikipedia","image":"https://www.wikipedia.org/static/apple-touch/wikipedia.png"},
-				{"url":"https://xilef12000.github.io/","name":"Xilef12000","image":"https://xilef12000.github.io/assets/favicon_dark.svg"},
+				{"url":"https://www.wikipedia.org/","name":"Wikipedia","image":"icons/wikipedia.png"},
+				{"url":"https://xilef12000.github.io/","name":"Xilef12000","image":"icons/xilef12000.svg"},
 				{"url":"https://en.wikipedia.org/wiki/Text","name":"Text as Icon","image":"TEXT:T"},
 				{"url":"","name":"","image":""},
 				{"url":"","name":"","image":""},
