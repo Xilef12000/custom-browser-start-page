@@ -4,7 +4,6 @@ function onload() {
 	const obj = JSON.parse(txt);
 	generateTable(obj);
 	logo(obj.settings.logo);
-	update(obj.settings.ignoreUpdates);
 }
 function search(event) {
 	var key = event.key;
@@ -25,23 +24,6 @@ function httpGet(theUrl)
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
-}
-function update(ignoreUpdates) {
-	if (!ignoreUpdates == true){
-		const api = httpGet("https://www.xilef12000.com/API/versions.json");
-		const apiJson = JSON.parse(api);
-		//console.log(apiJson.Xilef12000["custom-browser-start-page"].version);
-		if (apiJson.Xilef12000["custom-browser-start-page"].version != version) {
-			var message = ""
-			message += "Update available: you are still using version "
-			message += version
-			message += " but there is a newer version "
-			message += apiJson.Xilef12000["custom-browser-start-page"].version
-			message += ": \n \n"
-			message += apiJson.Xilef12000["custom-browser-start-page"].message
-			alert(message);
-		}
-	}
 }
 function generateTable(obj) {
 	const rows = obj.data.rows;
