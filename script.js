@@ -18,13 +18,6 @@ function logo(logo) {
 		document.getElementById("logo").style.visibility = "hidden";
 	}
 }
-function httpGet(theUrl)
-{
-	var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
 function generateTable(obj) {
 	const rows = obj.data.rows;
 	const columns = obj.data.columns;
