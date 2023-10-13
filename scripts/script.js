@@ -34,7 +34,7 @@ function generateTable(obj) {
 					table_content += '</div>'
 				} 
 				else {
-					table_content += '<img class="img" src="'
+					table_content += '<img class="img" src="assets/'
 					table_content += obj.content[i][j].image;
 					table_content += '">'
 				}
