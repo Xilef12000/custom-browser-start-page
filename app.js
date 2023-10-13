@@ -64,8 +64,10 @@ app.get('*', async (req, res) => {
             }
         }
         else {
-            //res.status(404).render('pages/404');
-            res.status(404).render('404');
+            //res.status(404).render('404');
+            res.statusCode = 404;
+            res.setHeader('Content-Type', 'text/html');
+            res.end(await readFile('views/404.html'));
         }
     }
     catch (e) {
