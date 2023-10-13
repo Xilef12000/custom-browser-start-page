@@ -1,0 +1,15 @@
+{
+  "name": "custom-browser-start-page",
+  "version": "1.0.0",
+  "description": "custom browser start page with plenty shortcuts ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xilef12000",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
