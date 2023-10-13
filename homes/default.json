@@ -21,9 +21,7 @@
 			{"url":"https://en.wikipedia.org/wiki/Text","name":"Text as Icon","image":"TEXT:T"},
 			{"url":"","name":"","image":""},
 			{"url":"","name":"","image":""},
-			{"url":"","name":"","image":""},
-			{"url":"","name":"","image":""},
-			{"url":"","name":"","image":""}
+			{"url":"/test","name":"sub Page","image":"TEXT: ->"}
 		]
 	]
 }

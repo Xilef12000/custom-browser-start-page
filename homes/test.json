@@ -1,0 +1,21 @@
+{
+	"settings":{
+		"logo":true
+	},
+	"data":{
+		"columns":3,
+		"rows":2
+	},
+	"content":[
+		[
+			{"url":"/","name":"Home Page","image":"TEXT: <-"},
+			{"url":"https://www.w3schools.com/","name":"W3Schools","image":"icons/w3schools.png"},
+			{"url":"https://www.w3.org/","name":"W3C","image":"icons/w3c.svg"}
+		],
+		[
+			{"url":"","name":"","image":""},
+			{"url":"https://xilef12000.github.io/","name":"Xilef12000","image":"icons/xilef12000.svg"},
+			{"url":"https://x42.space/","name":"x42.space","image":"TEXT: X"}
+		]
+	]
+}

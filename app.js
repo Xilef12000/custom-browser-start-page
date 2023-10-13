@@ -11,7 +11,7 @@ const mime = require('mime');
 
 
 const assets = ['style-sheets', 'scripts', 'assets'];
-const ejs = ['', '/', '/index'];
+const ejs = ['', '/', '/index', '/test'];
 
 app.get('*', async (req, res) => {
     try {
