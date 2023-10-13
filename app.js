@@ -19,12 +19,40 @@ app.get('*', async (req, res) => {
         //console.log(url);
         if (ejs.includes(url) || ejs.includes(url.split('/')[1])) {
             if (url == '/' || url == '') {
-                url = 'index';
+                url = 'default';
             }
-            //console.log('pages/' + url)
-            //res.render('pages/' + url);
+
             console.log(url)
-            res.render(url);
+
+            home = JSON.parse(await readFile('homes/' + url + '.json'));
+            const rows = home.data.rows;
+            const columns = home.data.columns;
+            var table_content = '<center><table>';
+            for (var i = 0; i <= rows - 1; i++) {
+                table_content += '<tr>';
+                for (var j = 0; j <= columns - 1; j++) {
+                    table_content += '<td>';
+                    table_content += '<a class="a" href="' + home.content[i][j].url + '"><center><div class="div">';
+                    if (home.content[i][j].image !== "") {
+                        if (home.content[i][j].image.slice(0, 5) == "TEXT:") {
+                            table_content += '<div class="img_text">'
+                            table_content += home.content[i][j].image.slice(5, home.content[i][j].image.lenght);
+                            table_content += '</div>'
+                        } 
+                        else {
+                            table_content += '<img class="img" src="assets/'
+                            table_content += home.content[i][j].image;
+                            table_content += '">'
+                        }
+                    }
+                    table_content += '</div><p class="p">' + home.content[i][j].name + '</p></center></a>';
+                    table_content += '</td>';
+                }
+                table_content += '</tr>';
+            }
+            table_content += '<table></center>';
+
+            res.render('index', {table: table_content});
         }
         else if (assets.includes(url.split('/')[1]) && existsSync('.' + url)){
             console.log(url);

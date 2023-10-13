@@ -1,0 +1,29 @@
+{
+	"settings":{
+		"logo":true
+	},
+	"data":{
+		"columns":6,
+		"rows":2
+	},
+	"content":[
+		[
+			{"url":"https://github.com/","name":"Github","image":"icons/github.svg"},
+			{"url":"https://about.gitlab.com/","name":"Gitlab","image":"icons/gitlab.png"},
+			{"url":"https://stackoverflow.com/","name":"Stackoverflow","image":"icons/stackoverflow.png"},
+			{"url":"https://www.youtube.com/","name":"Youtube","image":"icons/youtube.png"},
+			{"url":"https://www.amazon.de","name":"Amazon","image":"icons/amazon.ico"},
+			{"url":"https://www.reddit.com/","name":"Reddit","image":"icons/reddit.png"}
+		],
+		[
+			{"url":"https://www.wikipedia.org/","name":"Wikipedia","image":"icons/wikipedia.png"},
+			{"url":"https://xilef12000.github.io/","name":"Xilef12000","image":"icons/xilef12000.svg"},
+			{"url":"https://en.wikipedia.org/wiki/Text","name":"Text as Icon","image":"TEXT:T"},
+			{"url":"","name":"","image":""},
+			{"url":"","name":"","image":""},
+			{"url":"","name":"","image":""},
+			{"url":"","name":"","image":""},
+			{"url":"","name":"","image":""}
+		]
+	]
+}
