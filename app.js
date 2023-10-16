@@ -54,8 +54,8 @@ app.get('*', async (req, res) => {
             if (home.settings.logo == true){
                 logo = '<div id="logo" style="text-align: right;"><a href="https://xilef12000.com/"><img src="assets/logo_dark.svg" height="60px"></a></div>'
             }
-            
-            res.render('index', {table, logo});
+            const color = home.settings.color
+            res.render('index', {table, logo, color});
         }
         else if (assets.includes(url.split('/')[1]) && existsSync('.' + url)){
             //console.log(url);

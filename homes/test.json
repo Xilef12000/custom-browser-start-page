@@ -1,6 +1,7 @@
 {
 	"settings":{
-		"logo":false
+		"logo":false,
+		"color":"#d717f0"
 	},
 	"content":[
 		[

@@ -1,13 +1,22 @@
+:root {
+	--color-tx: #CDCDD4;
+	--color-bg1: #2A2A2E;
+	--color-bg2: rgba(255, 255, 255, 0.08);
+	--color-bb: #000000;
+}
 body {
-	background-color: #2A2A2E;
-	color: #CDCDD4;
+	height: 100vh;
+	margin: 0;
+	background-color: var(--color-bg1);
+	background-image: linear-gradient(var(--color-bg1) 0%, var(--color-ac) 100%);
+	color: var(--color-tx);
 	font-family: Arial;
 }
 input {
 	height: 32px;
-	background-color: #38383D;
-	color: #CDCDD4;
-	border-color: #000000;
+	background-color: var(--color-bg2);
+	color: var(--color-tx);
+	border-color: var(--color-bb);
 	border-radius: 8px;
 	border-width: 0px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
@@ -22,8 +31,7 @@ footer {
 	display: block;
 	width: 120px;
 	height: 144px;
-	background-color: #2A2A2E;
-	color: #CDCDD4;
+	color: var(--color-tx);
 	text-decoration: none;
 }
 .a:hover{
@@ -31,15 +39,15 @@ footer {
 	display: block;
 	width: 120px;
 	height: 144px;
-	background-color: #38383B;
-	color: #CDCDD4;
+	background-color: var(--color-bg2);
+	color: var(--color-tx);
 	text-decoration: none;
 }
 .div{
 	display: block;
 	border-radius: 8px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
-	background-color: #38383D;
+	background-color: var(--color-bg2);
 	height: 80px;
 	width: 80px;
 	position: relative;
@@ -49,7 +57,7 @@ footer {
 .img{
 	image-rendering: auto;
 	display: block;
-	border-color: #000000;
+	border-color: var(--color-bb);
 	border-width: 0px;
 	border-radius: 4px;
 	width: 48px;
@@ -70,8 +78,7 @@ footer {
 .p{
 	font-size: 14px;
 	font-family: Arial;
-	background-color: #2A2A2E00;
-	color: #CDCDD4;
+	color: var(--color-tx);
 	text-decoration: none;
 	margin-top: 18px;
 }
