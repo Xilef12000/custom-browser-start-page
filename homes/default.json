@@ -2,10 +2,6 @@
 	"settings":{
 		"logo":true
 	},
-	"data":{
-		"columns":6,
-		"rows":2
-	},
 	"content":[
 		[
 			{"url":"https://github.com/","name":"Github","image":"icons/github.svg"},

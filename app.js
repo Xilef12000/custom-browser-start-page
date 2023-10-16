@@ -21,41 +21,44 @@ app.get('*', async (req, res) => {
             if (url == '/' || url == '') {
                 url = 'default';
             }
-
-            console.log(url)
-
+            
+            //console.log(url)
+            
             home = JSON.parse(await readFile('homes/' + url + '.json'));
-            const rows = home.data.rows;
-            const columns = home.data.columns;
-            var table_content = '<center><table>';
-            for (var i = 0; i <= rows - 1; i++) {
-                table_content += '<tr>';
-                for (var j = 0; j <= columns - 1; j++) {
-                    table_content += '<td>';
-                    table_content += '<a class="a" href="' + home.content[i][j].url + '"><center><div class="div">';
+            var table = '<center><table>';
+            for (var i = 0; i <= home.content.length - 1; i++) {
+                table += '<tr>';
+                for (var j = 0; j <= home.content[i].length - 1; j++) {
+                    table += '<td>';
+                    table += '<a class="a" href="' + home.content[i][j].url + '"><center><div class="div">';
                     if (home.content[i][j].image !== "") {
                         if (home.content[i][j].image.slice(0, 5) == "TEXT:") {
-                            table_content += '<div class="img_text">'
-                            table_content += home.content[i][j].image.slice(5, home.content[i][j].image.lenght);
-                            table_content += '</div>'
+                            table += '<div class="img_text">'
+                            table += home.content[i][j].image.slice(5, home.content[i][j].image.lenght);
+                            table += '</div>'
                         } 
                         else {
-                            table_content += '<img class="img" src="assets/'
-                            table_content += home.content[i][j].image;
-                            table_content += '">'
+                            table += '<img class="img" src="assets/'
+                            table += home.content[i][j].image;
+                            table += '">'
                         }
                     }
-                    table_content += '</div><p class="p">' + home.content[i][j].name + '</p></center></a>';
-                    table_content += '</td>';
+                    table += '</div><p class="p">' + home.content[i][j].name + '</p></center></a>';
+                    table += '</td>';
                 }
-                table_content += '</tr>';
+                table += '</tr>';
             }
-            table_content += '<table></center>';
-
-            res.render('index', {table: table_content});
+            table += '<table></center>';
+            
+            var logo;
+            if (home.settings.logo == true){
+                logo = '<div id="logo" style="text-align: right;"><a href="https://xilef12000.com/"><img src="assets/logo_dark.svg" height="60px"></a></div>'
+            }
+            
+            res.render('index', {table, logo});
         }
         else if (assets.includes(url.split('/')[1]) && existsSync('.' + url)){
-            console.log(url);
+            //console.log(url);
             if (mime.getType(url.split('.').at(-1)).split('/')[0] == 'text') {
                 res.contentType(mime.getType(url.split('.').at(-1))).send( await readFile('.' + url, 'utf8') );
             }
