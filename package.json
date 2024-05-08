@@ -9,7 +9,7 @@
   "author": "Xilef12000",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
     "mime": "^3.0.0"
